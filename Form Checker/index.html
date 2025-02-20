@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription à la Formation Dev Web - D-CLIC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- En-tête -->
+        <header>
+            <img src="OIF_LOGO-BLOC MARQUE OIF_CMJN copie 1.jpg" alt="Logo D-CLIC" class="logo">
+            <h1>Formation Dev Web - Programme D-CLIC</h1>
+            <p>Rejoignez-nous pour une formation intensive en développement web !</p>
+        </header>
+
+        <!-- Formulaire -->
+        <form id="inscriptionForm">
+            <h2>Formulaire d'Inscription</h2>
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="prenoms">Prénoms :</label>
+                <input type="text" id="prenoms" name="prenoms" required>
+            </div>
+            <div class="form-group">
+                <label for="dateNaissance">Date de Naissance :</label>
+                <input type="date" id="dateNaissance" name="dateNaissance" required>
+            </div>
+            <div class="form-group">
+                <label for="telephone">Numéro de Téléphone :</label>
+                <input type="tel" id="telephone" name="telephone" required>
+            </div>
+            <div class="form-group">
+                <label for="motivation">Motivation :</label>
+                <textarea id="motivation" name="motivation" rows="5" placeholder="Minimum 1000 caractères maximum 2500" minlength="1000" maxlength="2500"></textarea>
+            </div>
+            <button type="submit">S'inscrire</button>
+        </form>
+
+        <!-- Section  des informations cachée au départ -->
+
+        <section id="confirmationSection" class="hidden">
+            <h2>Inscription Réussie !</h2>
+            <p>Merci pour votre inscription. Voici les informations que vous avez fournies :</p>
+            <ul>
+                <li><strong>Nom :</strong> <span id="confirmationNom"></span></li>
+                <li><strong>Prénoms :</strong> <span id="confirmationPrenoms"></span></li>
+                <li><strong>Date de Naissance :</strong> <span id="confirmationDateNaissance"></span></li>
+                <li><strong>Numéro de Téléphone :</strong> <span id="confirmationTelephone"></span></li>
+                <li><strong>Motivation :</strong> <span id="confirmationMotivation"></span></li>
+            </ul>
+        </section>
+    </div>
+<script src="script.js">
+</script>
+   
+</body>
+</html>
